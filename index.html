@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Happy Birthday ❤️</title>
+
+<style>
+body{
+    margin:0;
+    display:flex;
+    justify-content:center;
+    align-items:center;
+    height:100vh;
+    background:#ffb6c1;
+    font-family:Arial,sans-serif;
+}
+
+.card{
+    width:90%;
+    max-width:400px;
+    background:white;
+    padding:20px;
+    border-radius:20px;
+    text-align:center;
+    box-shadow:0 10px 20px rgba(0,0,0,.2);
+}
+
+img{
+    width:200px;
+    height:200px;
+    object-fit:cover;
+    border-radius:50%;
+    border:5px solid hotpink;
+}
+
+button{
+    margin-top:20px;
+    padding:12px 25px;
+    border:none;
+    background:#ff4d6d;
+    color:white;
+    border-radius:30px;
+    font-size:16px;
+}
+</style>
+
+</head>
+
+<body>
+
+<div class="card">
+
+<img src="foto.jpg">
+
+<h1>🎂 Selamat Ulang Tahun 🎂</h1>
+
+<p id="pesan">
+Semoga harimu menyenangkan ❤️
+</p>
+
+<button onclick="tampilPesan()">
+Buka Pesan 💌
+</button>
+
+</div>
+
+<script>
+
+function tampilPesan(){
+
+document.getElementById("pesan").innerHTML=
+`<b>Selamat ulang tahun, sayang ❤️</b><br><br>
+
+Semoga panjang umur, sehat selalu,
+bahagia setiap hari, dan semua impianmu tercapai.
+
+Terima kasih sudah menjadi bagian terindah dalam hidupku.
+
+Aku sayang kamu ananda ❤️`;
+
+}
+
+</script>
+
+</body>
+</html>
